@@ -6,7 +6,7 @@ class cena1 extends Phaser.Scene {
  preload () {
     // carregamento prévio das imagens e as spritesheets do jogo
     this.load.image('fundo', 'assets/cenario/cena1.png');
-    this.load.spritesheet('player', 'assets/player/Walk.png', { frameWidth: 128, frameHeight: 128});
+    this.load.spritesheet('player', 'assets/player/Walk.png', { frameWidth: 128, frameHeight: 72});
     this.load.spritesheet('bau', 'assets/bau.png', { frameWidth: 204, frameHeight: 134});
     this.load.image('chao', 'assets/plataformas/chao.png');
     this.load.image('plataforma_p', 'assets/plataformas/plataforma_p.png');
@@ -106,7 +106,7 @@ class cena1 extends Phaser.Scene {
 
         this.posicaoMoeda_X = Phaser.Math.RND.between(50, config.width); // número é sorteado
 
-        this.coin.setPosition(this.posicaoMoeda_X, 100); // configura nova posição da moeda para a posição do número sorteado acima
+        this.coin.setPosition(this.posicaoMoeda_X, 30); // configura nova posição da moeda para a posição do número sorteado acima
 
         this.pontuacao += 1; // soma pontuação
 

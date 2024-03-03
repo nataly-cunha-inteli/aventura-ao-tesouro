@@ -6,7 +6,7 @@ const config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 600 },
-            debug: true
+            debug: false
         } // com o physics de tipo 'arcade', consigo fazer um efeito de gravidade com o 'gravity', e com o 'debug' defino que não quero visualizar os limites dos elementos do meu jogo
     },
     
